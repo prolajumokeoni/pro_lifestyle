@@ -31,15 +31,16 @@
     <%= form.number_field :author_id %>
   </div>
 
-  <div class="field">
-    <%= form.label :category_id %>
-    <%= form.text_field :category_id %>
+   <div class="field">
+  <%= form.collection_select :category_id, Category.order(:name), :id, :name %>
   </div>
+
 
   <div class="field">
     <%= form.label :user_id %>
     <%= form.text_field :user_id %>
   </div>
+
 
   <div class="actions">
     <%= form.submit %>
