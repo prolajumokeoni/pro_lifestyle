@@ -31,5 +31,14 @@
   <%= @article.user.email %>
 </p>
 
+
+<div>
+   
+    <div class='article-voting'>
+      <span class='article-date'> <%= @article.created_at.strftime("%Y/%m/%d") %> </span>
+      <%= vote_or_disvote_btn(@article) %>
+    </div>
+  </div>
+  
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
