@@ -17,8 +17,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image %>
+    <%= form.label :image %>      
+    <%= form.file_field :article_photo %>
   </div>
 
   <div class="field">
@@ -32,6 +32,7 @@
   </div>
 
    <div class="field">
+    <%= form.label :category %>
   <%= form.collection_select :category_id, Category.order(:name), :id, :name %>
   </div>
 

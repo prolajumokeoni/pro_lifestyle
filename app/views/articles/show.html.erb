@@ -5,9 +5,10 @@
   <%= @article.title %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @article.image %>
+ <p>
+      <% if @article.article_photo.attached?%>
+      <%= image_tag @article.article_photo, width:"300", height:"300" %>
+      <% end %>
 </p>
 
 <p>
@@ -17,17 +18,17 @@
 
 <p>
   <strong>Author:</strong>
-  <%= @article.author_id %>
+  <%= @article.user_id %>
 </p>
 
 <p>
   <strong>Category:</strong>
-  <%= @article.category_id %>
+  <%= @article.category.name %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @article.user_id %>
+  <%= @article.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
