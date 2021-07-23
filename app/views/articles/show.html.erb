@@ -1,15 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="row g-0">
+  <div class="col-2"> <p>
+      <% if @article.article_photo.attached?%>
+      <%= image_tag @article.article_photo, width:"200", height:"200" %>
+      <% end %>
+</p></div>
+  <div class="col-2"><p>
   <strong>Title:</strong>
   <%= @article.title %>
 </p>
 
- <p>
-      <% if @article.article_photo.attached?%>
-      <%= image_tag @article.article_photo, width:"300", height:"300" %>
-      <% end %>
-</p>
+
 
 <p>
   <strong>Body:</strong>
@@ -25,9 +27,9 @@
   <%= @article.user.email%>
 </p>
 
-<div>
-     
-      
+
+
+<div>  
     <div class='article-voting'>
       <span class="">
         <p class=""> voted by:
@@ -39,6 +41,8 @@
       <%= @article.votes.count %>
   </div>
   </div>
-
+  
+</div>
+</div>
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
