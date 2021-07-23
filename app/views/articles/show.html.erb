@@ -26,11 +26,18 @@
 </p>
 
 <div>
-   
+     
+      
     <div class='article-voting'>
+      <span class="">
+        <p class=""> voted by:
+        <%= link_to @article.user.email %>
+        </p>
+      </span>
       <span class='article-date'> <%= @article.created_at.strftime("%Y/%m/%d") %> </span>
       <%= vote_or_disvote_btn(@article) %>
-    </div>
+      <%= @article.votes.count %>
+  </div>
   </div>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
