@@ -1,28 +1,27 @@
 <p id="notice"><%= notice %></p>
-<h1>Articles </h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-3 col">
-        <% @articles.each do |article| %>
-        <div class="col-sm">
-          <div class="row">
-            <div class="card">
-              <%= article.title %>
-              <% if article.article_photo.attached?%>
-              <%= image_tag article.article_photo, width:"250", height:"250" %>
-              <% end %>
-              <div class="card-body">
-                <h5 class="card-title"><%= article.body %>
-                <%= article.category.name %>
-                <%= article.user.email %>
-                <%= link_to 'Show', article %>
-                <%= link_to 'Edit', edit_article_path(article) %>
-                </h5>
-              </div>
+
+<div class="mx-aut">
+  <div class="row row-cols-3">
+      <% @articles.each do |article| %>
+      <div class="col">
+        <div class=" row">
+        <div class="pl-2">
+            <%= article.title %>
             </div>
-          </div>
-        <% end %>
+            <% if article.article_photo.attached?%>
+            <%= image_tag article.article_photo, width:"250", height:"250" %>
+            <% end %>
+            <div class="card-body text-white">
+              <%= article.body %>
+              <%= article.category.name %>
+              <%= article.user.email %>
+              <%= link_to 'Show', article %>
+              <%= link_to 'Edit', edit_article_path(article) %>
+            </div>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
+</div>
+
 <%= link_to 'New Category', new_category_path %>

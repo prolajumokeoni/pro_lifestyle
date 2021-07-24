@@ -1,0 +1,39 @@
+.b-color {
+  background-color: #DFB391;
+}
+
+.b-reset {
+  padding: 0;
+  margin: 0;
+}
+
+
+.n-width {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.f-center {
+  width: 20%;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.b-article {
+  background-color: #DFB391;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.a-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.field {
+  width: 50%;
+}

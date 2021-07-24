@@ -1,8 +1,9 @@
-<h1>New Article</h1>
+<div class="f-center bg-light w-50 p-5 border border-danger text-danger fw-bolder">
+  <h1>New Article</h1>
 
-<%= render 'form', article: @article %>
+  <%= render 'form', article: @article %>
+  <br>
+  <%= link_to 'Back', articles_path, class: "text-danger b-article fw-4 text-decoration-none" %>
 
-<%= link_to 'Back', articles_path %>
 
-
-<%= link_to 'New Article', new_article_path %>
+  <%= link_to 'New Article', new_article_path, class: "text-danger b-article fw-4 text-decoration-none" %>
