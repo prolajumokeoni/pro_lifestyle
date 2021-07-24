@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row g-0">
-  <div class="col-2"> <p>
+<div class="col-4 g-0 bg-white">
+<div class="d-flex justify-content-center">
+  <div class=""> <p>
       <% if @article.article_photo.attached?%>
       <%= image_tag @article.article_photo, width:"200", height:"200" %>
       <% end %>
 </p></div>
-  <div class="col-2"><p>
+  <div class=""><p>
   <strong>Title:</strong>
   <%= @article.title %>
 </p>
@@ -39,6 +40,7 @@
       <span class='article-date'> <%= @article.created_at.strftime("%Y/%m/%d") %> </span>
       <%= vote_or_disvote_btn(@article) %>
       <%= @article.votes.count %>
+  </div>
   </div>
   </div>
   
