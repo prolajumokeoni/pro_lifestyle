@@ -50,15 +50,15 @@
   margin-bottom: 10%;
 }
 
-
 .cat,
 .cat-table {
   margin: auto;
   width: 90%;
   padding-left: 40px;
 }
+
 .f-bottom {
-  position:sticky;
+  position: sticky;
   margin: 0 auto;
   width: 100%;
   right: 10px;
