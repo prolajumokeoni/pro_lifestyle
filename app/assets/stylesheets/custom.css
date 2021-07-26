@@ -15,7 +15,7 @@
 }
 
 .b-article {
-  background-color: #DFB391;
+  background-color: #dfb391;
   padding: 10px;
   border-radius: 25px;
 }
@@ -25,7 +25,6 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .field {
@@ -36,7 +35,6 @@
   width: 95%;
   margin: 0;
   padding-left: 60px;
-
 }
 
 .a-grid {
@@ -45,8 +43,15 @@
   padding-left: 40px;
 }
 
-.cat,.cat-table {
+.cat,
+.cat-table {
   margin: auto;
   width: 90%;
   padding-left: 40px;
+}
+.f-bottom {
+  position:sticky;
+  margin: 0 auto;
+  width: 100%;
+  right: 10px;
 }

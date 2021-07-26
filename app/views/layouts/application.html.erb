@@ -14,14 +14,15 @@
   <body class="b-color b-reset">
     <%= render partial: "shared/navbar" %>
     
-    <div class="container-fluid">
+    <div class="container-fluid main-content">
     
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
 
-    <%= render partial: "shared/footer" %>
+    
     
     </div>
+    <%= render partial: "shared/footer" %>
   </body>
 </html>
