@@ -10,8 +10,9 @@
 ## Live Demo
 
 
-[live demo](https://www.loom.com/share/ecfb83dd13e84287a73ea72b8aa0f107)
+[live demo](https://prolifestyle.herokuapp.com/)
 
+## Video
 [Video](https://www.loom.com/share/ecfb83dd13e84287a73ea72b8aa0f107)
 
 
