@@ -13,32 +13,20 @@
 <div class="cat-table bg-white p-5 ml-0">
 <h1 class="text-danger">Categories</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="container">
+  <div class="row row row-cols-3">
+      <% Category.all.each do |cat| %>
+      <div class="card col-3">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" style="width: 200px; height: 150px">
+        <%= link_to cat.name, articles_path(category: cat.name) %>  
 
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= category.name %></td>
-        <td><%= category.user_id %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      </div>
 
-<div class="danger-link"></div>
-<% Category.all.each do |cat| %>
-  <%= link_to cat.name, articles_path(category: cat.name) %>  
-<% end %>
+      <% end %>
+  </div>
+
+</div>
+
 
 
 <br>
