@@ -8,10 +8,7 @@
 }
 
 
-.n-width {
-  width: 98%;
-  margin: 0 auto;
-}
+
 
 .f-center {
   width: 20%;
@@ -36,4 +33,17 @@
 
 .field {
   width: 50%;
+}
+
+
+.photo {
+ width: 100%;
+  margin: 0 auto;
+}
+
+
+.a-grid {
+  margin: auto;
+  width: 96%;
+  padding-left: 40px;
 }

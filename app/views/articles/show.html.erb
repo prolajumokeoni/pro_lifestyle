@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<div class="col-4 g-0 bg-white">
+<div class="col-4 g-0 mx-auto">
 <div class="d-flex justify-content-center">
   <div class=""> <p>
       <% if @article.article_photo.attached?%>
       <%= image_tag @article.article_photo, width:"200", height:"200" %>
       <% end %>
 </p></div>
+<div class="px-4">
   <div class=""><p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -28,7 +29,7 @@
   <%= @article.user.email%>
 </p>
 
-
+</div>
 
 <div>  
     <div class='article-voting'>

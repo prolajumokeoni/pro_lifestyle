@@ -1,27 +1,43 @@
 <p id="notice"><%= notice %></p>
+  <div class=" mx-auto mt-4 mb-4 a-grid">
+        
+        <div class="">
+          <div class="row row-cols-3">
+           <% @articles.each do |article| %>
 
-<div class="mx-aut">
-  <div class="row row-cols-3">
-      <% @articles.each do |article| %>
-      <div class="col">
-        <div class=" row">
-        <div class="pl-2">
-            <%= article.title %>
+            <div class="col-lg-6 row ">
+              <div class="col-lg-6 px-0">
+              <div class="px-0 border border-danger">
+              <% if article.article_photo.attached? %>
+                <%= image_tag article.article_photo, width:"300", height:"250" %>
+              <% end %>
+              </div>
+              
+              </div>
+              <div class="col-lg-6 bg-light px-0 fs-4 text-danger border border-danger">
+              <p class="text-center text-uppercase fs-4 pt-2 fw-bolder">
+                <%= article.title %>
+              </p>
+                <p class="text-truncate text-left fs-5 p-2">
+                <%= article.body %>
+                </p>
+                <small class="fs-6 p-2">
+                 <%= article.category.name %>
+                </small>
+                <p class="fs-5 p-2">
+                  <%= article.user.email %>
+                </p>
+                <p class="text-danger fs-5 px-2 link-danger">
+                  <%= link_to 'Show', article %>
+                  <%= link_to 'Edit', edit_article_path(article) %>
+
+                </p>
+              </div>
             </div>
-            <% if article.article_photo.attached?%>
-            <%= image_tag article.article_photo, width:"250", height:"250" %>
-            <% end %>
-            <div class="card-body text-white">
-              <%= article.body %>
-              <%= article.category.name %>
-              <%= article.user.email %>
-              <%= link_to 'Show', article %>
-              <%= link_to 'Edit', edit_article_path(article) %>
-            </div>
+          <% end %>
         </div>
       </div>
-    <% end %>
-  </div>
-</div>
+    </div>
 
-<%= link_to 'New Category', new_category_path %>
+<br>
+<br>

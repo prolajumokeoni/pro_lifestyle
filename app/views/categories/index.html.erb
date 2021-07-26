@@ -1,4 +1,18 @@
-<p id="notice"><%= notice %></p>
+
+  <% popular = Vote.popular %>
+  <% popular.each do |vote| %>
+   
+    <p class="text-danger text-decoration-none fs-3 fw-bolder text-uppercase px-2">
+      Most Voted Article: <%= vote.article.title %>
+    </p>
+    <%= image_tag vote.article.article_photo, class:"photo"%>
+  <% end %>
+
+
+<% Category.all.each do |cat| %>
+  <%= link_to cat.name, articles_path(category: cat.name) %>  
+<% end %>
+
 
 <h1>Categories</h1>
 
