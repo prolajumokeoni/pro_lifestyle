@@ -1,14 +1,11 @@
 .b-color {
-  background-color: #DFB391;
+  background-color: #dfb391;
 }
 
 .b-reset {
   padding: 0;
   margin: 0;
 }
-
-
-
 
 .f-center {
   width: 20%;
@@ -35,7 +32,6 @@
   width: 50%;
 }
 
-
 .photo {
   width: 95%;
   margin: 0;
@@ -43,13 +39,11 @@
 
 }
 
-
 .a-grid {
   margin: auto;
   width: 90%;
   padding-left: 40px;
 }
-
 
 .cat,.cat-table {
   margin: auto;
