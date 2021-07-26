@@ -10,9 +10,9 @@
 ## Live Demo
 
 
-[live demo]()
+[live demo](https://www.loom.com/share/ecfb83dd13e84287a73ea72b8aa0f107)
 
-
+[Video](https://www.loom.com/share/ecfb83dd13e84287a73ea72b8aa0f107)
 
 
 ## Getting Started
@@ -61,9 +61,6 @@ Open `http://localhost:3000/` in your browser.
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
 
-### Deployment
-
-TBA
 
 ## Authors
 
