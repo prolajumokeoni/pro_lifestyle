@@ -65,8 +65,8 @@ Open `http://localhost:3000/` in your browser.
 
 - [@githubhandle](https://github.com/prolajumokeoni)
 - [@twitterhandle](https://twitter.com/prolajumokeoni)
-- [LinkedIn](https://www.linkedin.com/in/olajumoke-priscilla-oni-44a48b162/)
-TBA
+- [@LinkedIn](https://www.linkedin.com/in/olajumoke-priscilla-oni-44a48b162/)
+
 
 ## 🤝 Contributing
 
