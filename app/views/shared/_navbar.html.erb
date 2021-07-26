@@ -27,7 +27,7 @@
             <%= link_to current_user.email, edit_user_registration_path, class: "nav-link text fs-4"%>
         </li>
         <li class="nav-item">
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"nav-link  fs-4" %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"nav-link  fs-4 text-danger" %>
         </li>
         <% else %>
         <li class="nav-item">

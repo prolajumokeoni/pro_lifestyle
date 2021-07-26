@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'users/index'
   resources :articles do
-    resources :votes, only: [:create, :destroy]
+    resources :votes, only: %i[create destroy]
   end
   resources :categories
   devise_for :users
