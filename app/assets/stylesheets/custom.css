@@ -37,13 +37,22 @@
 
 
 .photo {
- width: 100%;
-  margin: 0 auto;
+  width: 95%;
+  margin: 0;
+  padding-left: 60px;
+
 }
 
 
 .a-grid {
   margin: auto;
-  width: 96%;
+  width: 90%;
+  padding-left: 40px;
+}
+
+
+.cat,.cat-table {
+  margin: auto;
+  width: 90%;
   padding-left: 40px;
 }
