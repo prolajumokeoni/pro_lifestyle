@@ -43,6 +43,14 @@
   padding-left: 40px;
 }
 
+.d-cat {
+  padding-left: 50px;
+  height: 70vh;
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+}
+
+
 .cat,
 .cat-table {
   margin: auto;
