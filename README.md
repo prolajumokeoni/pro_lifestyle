@@ -1,6 +1,6 @@
 # Pro_lifestyle
 
-> Rails capstone project, built a nature lifestyle articles.
+> Rails capstone project, built a nature lifestyle article website. Users can add their favourite nature pictures and under different categories. Users can also vote articles. The best article is featured on the categories page.
 
 ## Built With
 
@@ -9,16 +9,10 @@
 
 ## Live Demo
 
-
 [live demo](https://prolifestyle.herokuapp.com/)
 
 ## Video
 [Video](https://www.loom.com/share/ecfb83dd13e84287a73ea72b8aa0f107)
-
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -27,22 +21,22 @@ Rails: 5.2.3
 Postgres: >=9.5
 
 
-### Setup
+## Getting Started
 
-Instal gems with:
+To get a local copy up and running follow these simple example steps.
 
-```
-bundle install
-```
+- [Copy this link](https://github.com/prolajumokeoni/pro_lifestyle.git)
+- Open your terminal or command line
+- Run `git clone` and Paste the link
+- Open the folder with your code editor
+- Run `bundle install` to install all dependecies
 
-Setup database with:
+- Setup database with:
 
 ```
    rails db:create
    rails db:migrate
 ```
-
-
 
 ### Usage
 
@@ -56,7 +50,9 @@ Open `http://localhost:3000/` in your browser.
 
 ### Run tests
 
-```rpsec --format documentation```
+```
+    rpsec
+```
 
 
 ## Authors
