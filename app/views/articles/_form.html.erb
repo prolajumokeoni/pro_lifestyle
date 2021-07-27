@@ -12,29 +12,29 @@
   <% end %>
 
   <div class="a-form">
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+    <div class="field">
+      <%= form.label :title, :required => true %>
+      <%= form.text_field :title, :required => true %>
+    </div>
 
-  <div class="field">
-    <%= form.label :image %>      
-    <%= form.file_field :article_photo %>
-  </div>
+    <div class="field">
+      <%= form.label :image, :required => true %>      
+      <%= form.file_field :article_photo, :required => true %>
+    </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
+    <div class="field">
+      <%= form.label :body, :required => true %>
+      <%= form.text_area :body, :required => true %>
+    </div>
 
-   <div class="field">
-    <%= form.label :category %>
-  <%= form.collection_select :category_id, Category.order(:name), :id, :name %>
-  </div>
+    <div class="field">
+      <%= form.label :category %>
+    <%= form.collection_select :category_id, Category.order(:name), :id, :name %>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
 
   </div>
 <% end %>
