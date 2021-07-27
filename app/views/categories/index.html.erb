@@ -11,7 +11,7 @@
 
 
 <div class="cat-table b-color px-5 ml-0">
-<h1 class="f-text">Categories</h1>
+<h1 class="f-text fw-bolder">CATEGORIES</h1>
 
 
 <div class="">
@@ -19,9 +19,7 @@
       <% Category.all.each do |cat| %>
       <div class="b-color">
         <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" style="width: 260px; height: 250px">
-        <p class=" ">
-          <%= link_to cat.name, articles_path(category: cat.name), class: "fs-5 fw-bolder f-text text-decoration-none danger-link" %>  
-        </p>
+          <%= link_to cat.name, articles_path(category: cat.name), class: "fs-5 fw-bolder text-decoration-none" %> 
       </div>
 
       <% end %>
@@ -33,8 +31,8 @@
 
 <br>
 
-<%= link_to 'New Category', new_category_path %>
+<%= link_to 'New Category', new_category_path, class: "btn btn-light" %>
 
-<%= link_to 'New Article', new_article_path %>
+<%= link_to 'New Article', new_article_path, class: "btn btn-light" %>
 
 </div>
