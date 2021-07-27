@@ -6,6 +6,17 @@
   padding: 0;
   margin: 0;
 }
+
+.main-content {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .n-dot {
   height: 15px;
   width: 15px;
@@ -63,13 +74,18 @@
   width: 98%;
 }
 
-.f-bottom {
-  position: sticky;
-  margin: 0 auto;
-  width: 100%;
-  right: 10px;
-}
+
 
 .f-text {
   color: #f7622e;
+}
+
+footer{
+  margin-top: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  white-space: nowrap;
+  width: 90%;
 }
