@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-[live demo](https://prolifestyle.herokuapp.com/)
+[live demo](https://pronature.herokuapp.com/)
 
 ## Video
 [Video](https://www.loom.com/share/3b276415cc004a168c20c3dce314ddf9)
