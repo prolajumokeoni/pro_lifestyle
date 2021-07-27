@@ -21,6 +21,7 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
   end
+
   # POST /articles or /articles.json
   def create
     @article = current_user.articles.new(article_params)
