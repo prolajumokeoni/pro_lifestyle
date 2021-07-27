@@ -33,7 +33,7 @@ body {
 }
 
 .b-article {
-  background-color:#f7622e;
+  background-color: #f7622e;
   padding: 10px;
   border-radius: 25px;
 }
@@ -73,8 +73,6 @@ body {
   margin: 0 auto;
   width: 98%;
 }
-
-
 
 .f-text {
   color: #f7622e;
