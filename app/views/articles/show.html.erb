@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<div class="col-4 g-0 mx-auto">
-<div class="d-flex justify-content-center">
+<div class="col-4 g-0 mx-auto bg-white ">
+<div class="">
   <div class=""> <p>
       <% if @article.article_photo.attached?%>
-      <%= image_tag @article.article_photo, width:"200", height:"200" %>
+      <%= image_tag @article.article_photo, width:"420", height:"300" %>
       <% end %>
 </p></div>
-<div class="px-4">
+
+<div class="p-5 fw-bolder f-text">
   <div class=""><p>
   <strong>Title:</strong>
   <%= @article.title %>

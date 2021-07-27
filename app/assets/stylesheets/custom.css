@@ -1,10 +1,17 @@
 .b-color {
-  background-color: #dfb391;
+  background-color: #4e443f;
 }
 
 .b-reset {
   padding: 0;
   margin: 0;
+}
+.n-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #f7622e;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .f-center {
@@ -15,7 +22,7 @@
 }
 
 .b-article {
-  background-color: #dfb391;
+  background-color:#f7622e;
   padding: 10px;
   border-radius: 25px;
 }
@@ -52,9 +59,8 @@
 
 .cat,
 .cat-table {
-  margin: auto;
-  width: 90%;
-  padding-left: 40px;
+  margin: 0 auto;
+  width: 98%;
 }
 
 .f-bottom {
@@ -62,4 +68,8 @@
   margin: 0 auto;
   width: 100%;
   right: 10px;
+}
+
+.f-text {
+  color: #f7622e;
 }

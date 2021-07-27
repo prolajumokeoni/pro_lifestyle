@@ -7,14 +7,14 @@
 
             <div class="col-lg-6 row ">
               <div class="col-lg-6 px-0">
-              <div class="px-0 border border-danger">
+              <div class="px-0 border">
               <% if article.article_photo.attached? %>
                 <%= image_tag article.article_photo, width:"300", height:"250" %>
               <% end %>
               </div>
               
               </div>
-              <div class="col-lg-6 bg-light px-0 fs-4 text-danger border border-danger">
+              <div class="col-lg-6 bg-light px-0 fs-4 f-text border">
               <p class="text-center text-uppercase fs-4 pt-2 fw-bolder">
                 <%= article.title %>
               </p>

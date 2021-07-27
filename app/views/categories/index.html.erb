@@ -2,7 +2,7 @@
   <% popular = Vote.popular %>
   <% popular.each do |vote| %>
    
-    <p class="text-danger text-decoration-none px-5 fs-3 fw-bolder text-uppercase ">
+    <p class="f-text text-decoration-none mx-5 px-2 fs-3 fw-bolder text-uppercase ">
       Most Voted Article: <%= vote.article.title %>
     </p>
     <%= image_tag vote.article.article_photo, class:"photo"%>
@@ -10,17 +10,18 @@
 
 
 
-<div class="cat-table bg-white p-5 ml-0">
-<h1 class="text-danger">Categories</h1>
+<div class="cat-table b-color px-5 ml-0">
+<h1 class="f-text">Categories</h1>
 
 
-<div class="container">
-  <div class="row row row-cols-3">
+<div class="">
+  <div class="row row row-cols-4">
       <% Category.all.each do |cat| %>
-      <div class="card col-3">
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" style="width: 200px; height: 150px">
-        <%= link_to cat.name, articles_path(category: cat.name) %>  
-
+      <div class="b-color">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" style="width: 260px; height: 250px">
+        <p class=" ">
+          <%= link_to cat.name, articles_path(category: cat.name), class: "fs-5 fw-bolder f-text text-decoration-none danger-link" %>  
+        </p>
       </div>
 
       <% end %>
