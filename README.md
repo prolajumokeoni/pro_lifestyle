@@ -1,24 +1,84 @@
-# README
+# Pro_lifestyle
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Rails capstone project, built a nature lifestyle article website. Users can add their favourite nature pictures and under different categories. Users can also vote articles. The best article is featured on the categories page.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby v2.7.0
+- Ruby on Rails v5.2.4
 
-* System dependencies
+## Live Demo
 
-* Configuration
+[live demo](https://pronature.herokuapp.com/)
 
-* Database creation
+## Video
+[Video](https://www.loom.com/share/3b276415cc004a168c20c3dce314ddf9)
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+Ruby: 2.6.3
+Rails: 5.2.3
+Postgres: >=9.5
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Getting Started
 
-* ...
+To get a local copy up and running follow these simple example steps.
+
+- [Copy this link](https://github.com/prolajumokeoni/pro_lifestyle.git)
+- Open your terminal or command line
+- Run `git clone` and Paste the link
+- Open the folder with your code editor
+- Run `bundle install` to install all dependecies
+
+- Setup database with:
+
+```
+   rails db:create
+   rails db:migrate
+```
+
+### Usage
+
+Start server with:
+
+```
+    rails server
+```
+
+Open `http://localhost:3000/` in your browser.
+
+### Run tests
+
+```
+    rpsec
+```
+
+
+## Authors
+
+👤 **Oni Olajumuke Priscilla**
+
+- [@githubhandle](https://github.com/prolajumokeoni)
+- [@twitterhandle](https://twitter.com/prolajumokeoni)
+- [@LinkedIn](https://www.linkedin.com/in/olajumoke-priscilla-oni-44a48b162/)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/prolajumokeoni/pro_lifestyle/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+
+## 📝 License
+
+This project is [MIT](https://github.com/prolajumokeoni/pro_lifestyle/blob/development/LICENSE) licensed.

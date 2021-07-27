@@ -1,0 +1,9 @@
+<div class="f-center bg-light w-50 p-5  f-text fw-bolder d-cat">
+  <h1>New Article</h1>
+
+  <%= render 'form', article: @article %>
+  <br>
+  <%= link_to 'Back', articles_path, class: "b-article fw-4 text-decoration-none text-light" %>
+
+
+  <%= link_to 'New Article', new_article_path, class: "b-article fw-4 text-decoration-none text-light" %>

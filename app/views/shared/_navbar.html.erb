@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 n-width border-light container">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2 fw-bold text-dark text-muted pb-3" href="/">PRo
+      <span class="n-dot"></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+         <li class="nav-item f-text">
+          <%= link_to 'CATEGORIES', categories_path, class: "text-decoration-none fs-6 px-2" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'ARTICLES', articles_path, class: "text-muted text-decoration-none fs-6 px-2" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'NEW CATEGORY', new_category_path, class: "text-muted text-decoration-none fs-6 px-2" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'NEW ARTICLE', new_article_path, class: "text-muted text-decoration-none fs-6 px-2" %>
+
+        </li>
+      </ul>
+        <ul class="nav justify-content-end">
+        <% if user_signed_in? %>
+        <li class="nav-item">
+            <%= link_to current_user.email, edit_user_registration_path, class: "nav-link text fs-4"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"nav-link  fs-4 text-muted" %>
+        </li>
+        <% else %>
+        <li class="nav-item">
+          <%= link_to 'SIGN IN', new_user_session_path, class: "nav-link fs-4 text-muted text-decoration-none fs-4 px-2"  %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'SIGN UP', new_user_registration_path, class: "nav-link fs-4 text-muted text-decoration-none fs-4 px-2" %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
