@@ -18,8 +18,9 @@ class ArticlesController < ApplicationController
   end
 
   # GET /articles/1/edit
-  def edit; end
-
+  def edit
+    @article = Article.find(params[:id])
+  end
   # POST /articles or /articles.json
   def create
     @article = current_user.articles.new(article_params)

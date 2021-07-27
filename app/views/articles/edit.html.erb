@@ -1,6 +1,17 @@
-<h1>Editing Article</h1>
+<div class="bg-white container pt-5 f-text h-100 w-50">
+<% if user_signed_in? %>
+  <% if @article.user.id == current_user.id %>
+    <%= render 'form', article: @article %>
+    <%= link_to 'Show', @article %> 
+    <%= link_to 'Back', articles_path %>
+ 
+  <% else %>
+  <h1 class="f-text mx-auto p-5">Stop trying to edit others post!</h1>
 
-<%= render 'form', article: @article %>
+ <%= link_to 'Show', @article, class: "fs-5  b-article"%> 
+ <%= link_to 'Back', articles_path, class: "fs-5 b-article"%>
+<% end %>
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+ <%end%>
+
+</div>
