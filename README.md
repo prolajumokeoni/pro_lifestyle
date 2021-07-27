@@ -12,7 +12,7 @@
 [live demo](https://prolifestyle.herokuapp.com/)
 
 ## Video
-[Video](https://www.loom.com/share/ecfb83dd13e84287a73ea72b8aa0f107)
+[Video](https://www.loom.com/share/3b276415cc004a168c20c3dce314ddf9)
 
 ### Prerequisites
 
